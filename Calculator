@@ -1,0 +1,74 @@
+import java.util.*;
+
+public class Calculator {
+	public static void main(String[] args){
+		try {
+			System.out.println("Welcome to this useless calculator!");
+			
+			//Taking input
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Please Enter your First Number!");
+			String number1 = sc.nextLine();
+			System.out.println("Please Enter your Second Number!");
+			String number2 = sc.nextLine();
+			
+			//Parsing strings
+			int intnumber1 = Integer.parseInt(number1);
+			int intnumber2 = Integer.parseInt(number2);
+				
+			//Giving output
+			System.out.println("Would you Like to Divide, Multiply, Add or Subtract?");
+			String arg = sc.nextLine();
+			if (arg.equalsIgnoreCase("divide")) {
+				System.out.println("Your Answer is...");
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.println(" ");
+				System.out.println(intnumber1 / intnumber2);
+			}
+			else if (arg.equalsIgnoreCase("multiply")) {
+				System.out.println("Your Answer is...");
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.println(" ");
+				System.out.println(intnumber1 * intnumber2);
+			}
+			else if (arg.equalsIgnoreCase("add")) {
+				System.out.println("Your Answer is...");
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.println(" ");
+				System.out.println(intnumber1 + intnumber2);
+			}
+			else if (arg.equalsIgnoreCase("subtract")) {
+				System.out.println("Your Answer is...");
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.print(".");
+				Thread.sleep(500);
+				System.out.println(" ");
+				System.out.println(intnumber1 - intnumber2);
+			}
+			else {
+				System.out.println("My Calculator is Useless!");
+			}
+		}
+		catch(InterruptedException ex) {
+			ex.printStackTrace();
+		}
+	}
+}
