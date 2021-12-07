@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class NextNumber {
+	public static void main (String[] args) {
+		try {
+			//Creating Scanner
+			Scanner sc = new Scanner(System.in);
+			
+			//Welcome message
+			System.out.println("Welcome to Next Number! Enter A Number And I Will Add 1 To It!");
+			
+			//Taking input and parsing
+			String strnumber = sc.nextLine();
+			int number = Integer.parseInt(strnumber);
+			
+			//Displaying number
+			System.out.println("Your number is");
+			System.out.print(".");
+			Thread.sleep(500);
+			System.out.print(".");
+			Thread.sleep(500);
+			System.out.print(".");
+			Thread.sleep(500);
+			System.out.println(" ");
+			System.out.println(number+1);
+		}
+		//catch error for delay
+		catch (InterruptedException ex) {
+			ex.printStackTrace();
+		}
+	}
+}
