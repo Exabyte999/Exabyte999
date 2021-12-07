@@ -1,0 +1,29 @@
+public class counting {
+	public static void main(String[] args) {
+		try {
+			int number = 1;
+			System.out.println(number);
+			Thread.sleep(500);
+			System.out.println(number+1);
+			Thread.sleep(500);
+			System.out.println(number+2);
+			Thread.sleep(500);
+			System.out.println(number+3);
+			Thread.sleep(500);
+			System.out.println(number+4);
+			Thread.sleep(500);
+			System.out.println(number+5);
+			Thread.sleep(500);
+			System.out.println(number+6);
+			Thread.sleep(500);
+			System.out.println(number+7);
+			Thread.sleep(500);
+			System.out.println(number+8);
+			Thread.sleep(500);
+			System.out.println(number+9);
+		}
+		catch(InterruptedException ex) {
+			ex.printStackTrace();
+		}
+	}
+}
